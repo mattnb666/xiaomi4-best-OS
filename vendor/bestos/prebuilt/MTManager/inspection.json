@@ -1,0 +1,33 @@
+{
+  "sha256": "caa2d74e218ae3162fbef38836a4190fea1276576461d358e0d3681d40f3e3bb",
+  "bytes": 32070086,
+  "manifest": [
+    {
+      "tag": "manifest",
+      "attributes": {
+        "versionCode": 26081193,
+        "versionName": "2.26.8-clone",
+        "compileSdkVersion": 36,
+        "compileSdkVersionCodename": "16",
+        "package": "bin.mt.plus.canary",
+        "platformBuildVersionCode": 36,
+        "platformBuildVersionName": 16
+      }
+    },
+    {
+      "tag": "uses-sdk",
+      "attributes": {
+        "minSdkVersion": 21,
+        "targetSdkVersion": 28
+      }
+    }
+  ],
+  "native_abis": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86",
+    "x86_64"
+  ],
+  "zip_integrity_error": null,
+  "signature_verification": "not performed"
+}

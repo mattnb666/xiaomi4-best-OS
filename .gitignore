@@ -1,0 +1,11 @@
+.DS_Store
+*.apk
+*.img
+*.zip
+*.tgz
+*.pem
+*.pk8
+.env
+.env.*
+out/
+.repo/
