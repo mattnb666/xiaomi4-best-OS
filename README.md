@@ -1,6 +1,6 @@
-# xiaomi 4-bestOS
+# xiaomi 4 bestOS 1.0
 
-为小米 4 LTE 制作的 AOSP 原生 Android 10 定制系统项目。
+为小米 4 LTE 制作的 bestOS 1.0 系统项目。
 
 **当前状态：定制层初始配置，尚未接入完整 Android 10 源码、设备树、内核及专有驱动；没有可刷机产物。**
 
@@ -12,7 +12,7 @@ MT 管理器预装模块需要自行提供匹配的 APK，放到 `vendor/bestos/
 
 ## 已确定需求
 
-- 系统名称：bestOS
+- 系统名称：bestOS 1.0
 - Android 版本：10（API 29）
 - 系统基底：AOSP 原生 Android 10 源码；在此基础上开发 bestOS 品牌与系统定制。
 - 定制深度：桌面、系统界面、自带应用、设置与默认行为全面定制；具体设计待确定，不限定原生外观。
