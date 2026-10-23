@@ -1,4 +1,4 @@
-# bestOS
+# xiaomi 4-bestOS
 
 为小米 4 LTE 制作的 AOSP 原生 Android 10 定制系统项目。
 
