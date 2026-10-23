@@ -1,6 +1,6 @@
-# xiaomi 4 bestOS 1.0
+# xiaomi 4 bestOS 0.1-dev
 
-为小米 4 LTE 制作的 bestOS 1.0 系统项目。
+为小米 4 LTE 制作的 bestOS 0.1 系统项目。
 
 **当前状态：定制层初始配置，尚未接入完整 Android 10 源码、设备树、内核及专有驱动；没有可刷机产物。**
 
