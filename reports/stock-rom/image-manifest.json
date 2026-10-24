@@ -1,0 +1,107 @@
+[
+  {
+    "file": "NON-HLOS.bin",
+    "bytes": 55690752,
+    "sha256": "8d141c37acafbcda82e739f9d9fc7374f5919737b5f7f76d7be821af72368b98"
+  },
+  {
+    "file": "boot.img",
+    "bytes": 14745600,
+    "sha256": "cbdf148c8e0a067f367789217a3248cf3593220b0e7e31c7b91282daab816713"
+  },
+  {
+    "file": "cache.img",
+    "bytes": 8536296,
+    "sha256": "9cb55f41484521ef98074a031f0f1c08f8b9df98de09f8347c01d7a2074be0ae"
+  },
+  {
+    "file": "dummy.img",
+    "bytes": 8192,
+    "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+  },
+  {
+    "file": "emmc_appsboot.mbn",
+    "bytes": 2145916,
+    "sha256": "7a89146912d1dda754f6a1617daf6856d19561b51b8ee8ca781709c0a6ae3fe8"
+  },
+  {
+    "file": "flash.xml",
+    "bytes": 168,
+    "sha256": "7ea4430c1d525f81936add028c58ebb9755ba5093410d339646a03547e0425f4"
+  },
+  {
+    "file": "gpt_backup0.bin",
+    "bytes": 16896,
+    "sha256": "436a2c84d1e8397cd2edbd7abf5da059b6f1672b242a8607c86b89032925a245"
+  },
+  {
+    "file": "gpt_both0.bin",
+    "bytes": 34304,
+    "sha256": "dccaa6ff8c3487dadacb520c55a6e738ef061beb8934410e1020de04d680cb65"
+  },
+  {
+    "file": "gpt_main0.bin",
+    "bytes": 17408,
+    "sha256": "18fcf604fa6d1ee1da96d3e0b996f0876aa3b752aacbe627aa8a89baa572ae08"
+  },
+  {
+    "file": "misc.img",
+    "bytes": 8192,
+    "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+  },
+  {
+    "file": "patch0.xml",
+    "bytes": 6248,
+    "sha256": "bed4e2db1ea3a810693a9c9675583f43da9805152bff650b1490d166f17add25"
+  },
+  {
+    "file": "persist.img",
+    "bytes": 4513940,
+    "sha256": "abebdf7edbe012e56c8ac8b387a57b177fd1174b1d5762203f8c922c4df52420"
+  },
+  {
+    "file": "prog_emmc_firehose_8974.mbn",
+    "bytes": 84192,
+    "sha256": "964b5c486b200aa6462733a682f9cead3ebfad555ce2ff3622fea8b279b006ee"
+  },
+  {
+    "file": "rawprogram0.xml",
+    "bytes": 7873,
+    "sha256": "fa7e60cdfc00e3e508a542f3818b7766102115e210e6082d7691199a5fc38c9a"
+  },
+  {
+    "file": "recovery.img",
+    "bytes": 16252928,
+    "sha256": "96297d805fbd80d76b715266e17146701c2078a913f61b1518998dde2d75159c"
+  },
+  {
+    "file": "rpm.mbn",
+    "bytes": 190404,
+    "sha256": "fc34cb10b7380219511033e76daff497a66141185861316feb81c9163e4fff90"
+  },
+  {
+    "file": "sbl1.mbn",
+    "bytes": 280912,
+    "sha256": "263224c3b429880a9201d224a7f560f1cbd141945e6efc1358309cf20c644b54"
+  },
+  {
+    "file": "sdi.mbn",
+    "bytes": 11712,
+    "sha256": "e9d08ba07f6e90a4dbf7a8776d5f42793332364046759b0c2b661db8fed5d179"
+  },
+  {
+    "file": "system.img",
+    "bytes": 1081784320,
+    "sha256": "7b76adc48ff32c55f88eb50ccf621a96d4861be1582e47d84e9c4c78da16de5c"
+  },
+  {
+    "file": "tz.mbn",
+    "bytes": 333672,
+    "sha256": "179e81f00e8e6e6e9f28a280a333c17509258cdfd74dcf661fe37b611a12f4a9"
+  },
+  {
+    "file": "userdata.img",
+    "bytes": 728419680,
+    "sha256": "df82f9523b204a3bd5c609e51bfb43ba396bfa762da587b98b6be95449158988"
+  }
+]

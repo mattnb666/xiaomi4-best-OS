@@ -1,0 +1,14 @@
+{
+  "kernel_size": 10855751,
+  "ramdisk_size": 1373153,
+  "second_size": 0,
+  "page_size": 2048,
+  "dt_size_field": 2512896,
+  "cmdline_offset_observed": 60,
+  "cmdline": "console=ttyHSL0,115200,n8 androidboot.hardware=qcom user_debug=23 msm_rtb.filter=0x3b7 ehci-hcd.park=3 androidboot.bootdevice=msm_sdcc.1",
+  "components": {
+    "kernel": "cc2a1a490b6e94dedebc0dfcf251bebb112241a63c758a4700e805b4d6e8ea56",
+    "ramdisk.gz": "8e9af20d929ad6c20d76f900216044a6fcc50b3b9d24dd2d46ce41f35f6498b2",
+    "dt.img": "acc151f213b855b1f2a0b10a69145fe069afd4bfd0c54efe2c50606ce62aa352"
+  }
+}

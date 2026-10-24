@@ -1,0 +1,92 @@
+{
+  "camera": {
+    "candidate_count": 266,
+    "examples": [
+      "/system/bin/mm-qcamera-app",
+      "/system/bin/mm-qcamera-daemon",
+      "/system/etc/permissions/android.hardware.camera.flash-autofocus.xml",
+      "/system/etc/permissions/android.hardware.camera.front.xml",
+      "/system/framework/org.codeaurora.camera.jar",
+      "/system/lib/hw/camera.msm8974.so",
+      "/system/lib/libCameraEffectJNI.so",
+      "/system/lib/libcamera_client.so",
+      "/system/lib/libcamera_metadata.so",
+      "/system/lib/libcameraservice.so"
+    ]
+  },
+  "graphics": {
+    "candidate_count": 18,
+    "examples": [
+      "/system/lib/egl/egl.cfg",
+      "/system/lib/hw/copybit.msm8974.so",
+      "/system/lib/hw/gralloc.default.so",
+      "/system/lib/hw/gralloc.msm8974.so",
+      "/system/lib/hw/hwcomposer.msm8974.so",
+      "/system/lib/libGLES_trace.so",
+      "/system/lib/libGLESv1_CM.so",
+      "/system/lib/libGLESv2.so",
+      "/system/lib/libGLESv3.so",
+      "/system/vendor/lib/egl/eglsubAndroid.so"
+    ]
+  },
+  "audio": {
+    "candidate_count": 177,
+    "examples": [
+      "/system/bin/audiod",
+      "/system/etc/acdbdata/MTP/X3/MTP_X3_Bluetooth_cal.acdb",
+      "/system/etc/acdbdata/MTP/X3/MTP_X3_General_cal.acdb",
+      "/system/etc/acdbdata/MTP/X3/MTP_X3_Global_cal.acdb",
+      "/system/etc/acdbdata/MTP/X3/MTP_X3_Handset_cal.acdb",
+      "/system/etc/acdbdata/MTP/X3/MTP_X3_Hdmi_cal.acdb",
+      "/system/etc/acdbdata/MTP/X3/MTP_X3_Headset_cal.acdb",
+      "/system/etc/acdbdata/MTP/X3/MTP_X3_Speaker_cal.acdb",
+      "/system/etc/acdbdata/MTP/X4/MTP_X4_Bluetooth_cal.acdb",
+      "/system/etc/acdbdata/MTP/X4/MTP_X4_General_cal.acdb"
+    ]
+  },
+  "radio": {
+    "candidate_count": 27,
+    "examples": [
+      "/system/bin/imsqmidaemon",
+      "/system/bin/rild",
+      "/system/etc/apns-conf.xml",
+      "/system/etc/data/qmi_config.xml",
+      "/system/etc/init.qcom.modem_links.sh",
+      "/system/etc/modem/Diag.cfg",
+      "/system/etc/permissions/qcrilhook.xml",
+      "/system/framework/qcrilhook.jar",
+      "/system/lib/lib_cit_qminvjni.so",
+      "/system/lib/libqminvapi.so"
+    ]
+  },
+  "wifi-bluetooth": {
+    "candidate_count": 70,
+    "examples": [
+      "/system/app/Bluetooth/lib/arm/libbluetooth_jni.so",
+      "/system/app/BluetoothExt/lib/arm/libbluetooth_jni.so",
+      "/system/bin/wcnss_service",
+      "/system/bin/xtwifi-client",
+      "/system/bin/xtwifi-inet-agent",
+      "/system/etc/acdbdata/MTP/X3/MTP_X3_Bluetooth_cal.acdb",
+      "/system/etc/acdbdata/MTP/X4/MTP_X4_Bluetooth_cal.acdb",
+      "/system/etc/acdbdata/MTP/X5/MTP_X5_Bluetooth_cal.acdb",
+      "/system/etc/bluetooth/auto_pair_devlist.conf",
+      "/system/etc/bluetooth/bt_did.conf"
+    ]
+  },
+  "sensors-power": {
+    "candidate_count": 41,
+    "examples": [
+      "/system/app/PowerKeeper/lib/arm/libpowerkeeper_jni.so",
+      "/system/bin/changepowermode.sh",
+      "/system/bin/sensors.qcom",
+      "/system/bin/sensorservice",
+      "/system/bin/set_sensorprop.sh",
+      "/system/bin/test-nusensors",
+      "/system/bin/touch",
+      "/system/etc/permissions/android.hardware.sensor.accelerometer.xml",
+      "/system/etc/permissions/android.hardware.sensor.barometer.xml",
+      "/system/etc/permissions/android.hardware.sensor.compass.xml"
+    ]
+  }
+}

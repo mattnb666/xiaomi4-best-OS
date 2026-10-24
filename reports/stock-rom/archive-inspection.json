@@ -1,0 +1,161 @@
+{
+  "source_page": "https://xiaomirom.com/download/mi-3-mi-4-mi-4-lte-ct-cancro-stable-V10.1.1.0.MXDCNFI/",
+  "download_url": "https://cdnorg.d.miui.com/V10.1.1.0.MXDCNFI/cancro_images_V10.1.1.0.MXDCNFI_20181010.0000.00_6.0_cn_911b6abc33.tgz",
+  "bytes": 1212837378,
+  "sha256": "1141e7bbbbc1c9eec1fbd7da085fdebf7df97a2f7f26b77f422c0aaca4f9fae1",
+  "md5": "911b6abc3354d346cb625d7af63f0cc7",
+  "publisher_checksum": "not provided on source page",
+  "gzip_verified": true,
+  "members": [
+    {
+      "name": "cancro_images_V10.1.1.0.MXDCNFI_20181010.0000.00_6.0_cn",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "name": "cancro_images_V10.1.1.0.MXDCNFI_20181010.0000.00_6.0_cn/images",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "name": "cancro_images_V10.1.1.0.MXDCNFI_20181010.0000.00_6.0_cn/images/recovery.img",
+      "bytes": 16252928,
+      "type": "0"
+    },
+    {
+      "name": "cancro_images_V10.1.1.0.MXDCNFI_20181010.0000.00_6.0_cn/images/patch0.xml",
+      "bytes": 6248,
+      "type": "0"
+    },
+    {
+      "name": "cancro_images_V10.1.1.0.MXDCNFI_20181010.0000.00_6.0_cn/images/userdata.img",
+      "bytes": 728419680,
+      "type": "0"
+    },
+    {
+      "name": "cancro_images_V10.1.1.0.MXDCNFI_20181010.0000.00_6.0_cn/images/emmc_appsboot.mbn",
+      "bytes": 2145916,
+      "type": "0"
+    },
+    {
+      "name": "cancro_images_V10.1.1.0.MXDCNFI_20181010.0000.00_6.0_cn/images/flash.xml",
+      "bytes": 168,
+      "type": "0"
+    },
+    {
+      "name": "cancro_images_V10.1.1.0.MXDCNFI_20181010.0000.00_6.0_cn/images/rawprogram0.xml",
+      "bytes": 7873,
+      "type": "0"
+    },
+    {
+      "name": "cancro_images_V10.1.1.0.MXDCNFI_20181010.0000.00_6.0_cn/images/tz.mbn",
+      "bytes": 333672,
+      "type": "0"
+    },
+    {
+      "name": "cancro_images_V10.1.1.0.MXDCNFI_20181010.0000.00_6.0_cn/images/rpm.mbn",
+      "bytes": 190404,
+      "type": "0"
+    },
+    {
+      "name": "cancro_images_V10.1.1.0.MXDCNFI_20181010.0000.00_6.0_cn/images/sdi.mbn",
+      "bytes": 11712,
+      "type": "0"
+    },
+    {
+      "name": "cancro_images_V10.1.1.0.MXDCNFI_20181010.0000.00_6.0_cn/images/dummy.img",
+      "bytes": 8192,
+      "type": "0"
+    },
+    {
+      "name": "cancro_images_V10.1.1.0.MXDCNFI_20181010.0000.00_6.0_cn/images/NON-HLOS.bin",
+      "bytes": 55690752,
+      "type": "0"
+    },
+    {
+      "name": "cancro_images_V10.1.1.0.MXDCNFI_20181010.0000.00_6.0_cn/images/sbl1.mbn",
+      "bytes": 280912,
+      "type": "0"
+    },
+    {
+      "name": "cancro_images_V10.1.1.0.MXDCNFI_20181010.0000.00_6.0_cn/images/prog_emmc_firehose_8974.mbn",
+      "bytes": 84192,
+      "type": "0"
+    },
+    {
+      "name": "cancro_images_V10.1.1.0.MXDCNFI_20181010.0000.00_6.0_cn/images/boot.img",
+      "bytes": 14745600,
+      "type": "0"
+    },
+    {
+      "name": "cancro_images_V10.1.1.0.MXDCNFI_20181010.0000.00_6.0_cn/images/persist.img",
+      "bytes": 4513940,
+      "type": "0"
+    },
+    {
+      "name": "cancro_images_V10.1.1.0.MXDCNFI_20181010.0000.00_6.0_cn/images/cache.img",
+      "bytes": 8536296,
+      "type": "0"
+    },
+    {
+      "name": "cancro_images_V10.1.1.0.MXDCNFI_20181010.0000.00_6.0_cn/images/gpt_both0.bin",
+      "bytes": 34304,
+      "type": "0"
+    },
+    {
+      "name": "cancro_images_V10.1.1.0.MXDCNFI_20181010.0000.00_6.0_cn/images/gpt_backup0.bin",
+      "bytes": 16896,
+      "type": "0"
+    },
+    {
+      "name": "cancro_images_V10.1.1.0.MXDCNFI_20181010.0000.00_6.0_cn/images/misc.img",
+      "bytes": 8192,
+      "type": "0"
+    },
+    {
+      "name": "cancro_images_V10.1.1.0.MXDCNFI_20181010.0000.00_6.0_cn/images/system.img",
+      "bytes": 1081784320,
+      "type": "0"
+    },
+    {
+      "name": "cancro_images_V10.1.1.0.MXDCNFI_20181010.0000.00_6.0_cn/images/gpt_main0.bin",
+      "bytes": 17408,
+      "type": "0"
+    },
+    {
+      "name": "cancro_images_V10.1.1.0.MXDCNFI_20181010.0000.00_6.0_cn/flash_all.sh",
+      "bytes": 1293,
+      "type": "0"
+    },
+    {
+      "name": "cancro_images_V10.1.1.0.MXDCNFI_20181010.0000.00_6.0_cn/flash_all_except_storage.sh",
+      "bytes": 1233,
+      "type": "0"
+    },
+    {
+      "name": "cancro_images_V10.1.1.0.MXDCNFI_20181010.0000.00_6.0_cn/flash_all_except_storage.bat",
+      "bytes": 1335,
+      "type": "0"
+    },
+    {
+      "name": "cancro_images_V10.1.1.0.MXDCNFI_20181010.0000.00_6.0_cn/flash_all_except_data_storage.bat",
+      "bytes": 1335,
+      "type": "0"
+    },
+    {
+      "name": "cancro_images_V10.1.1.0.MXDCNFI_20181010.0000.00_6.0_cn/misc.txt",
+      "bytes": 79,
+      "type": "0"
+    },
+    {
+      "name": "cancro_images_V10.1.1.0.MXDCNFI_20181010.0000.00_6.0_cn/flash_all.bat",
+      "bytes": 1387,
+      "type": "0"
+    },
+    {
+      "name": "cancro_images_V10.1.1.0.MXDCNFI_20181010.0000.00_6.0_cn/flash_all_except_data_storage.sh",
+      "bytes": 1233,
+      "type": "0"
+    }
+  ]
+}
