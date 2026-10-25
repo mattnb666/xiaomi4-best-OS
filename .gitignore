@@ -9,3 +9,8 @@
 .env.*
 out/
 .repo/
+downloads/
+__pycache__/
+
+# User-provided branding source archive
+!assets/branding/bestOS-wordmark-original.zip
