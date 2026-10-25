@@ -1,0 +1,67 @@
+[
+  {
+    "file": "README.md",
+    "bytes": 1740,
+    "sha256": "f8ae9dc47cf0d72fce97a530d48a1f4871904ee1d6bb6f5167026ae664f67662"
+  },
+  {
+    "file": "bestOS字标_整屏_1080x1920_黑底.png",
+    "bytes": 47540,
+    "sha256": "4ab08a7d9db96296c2687157f0f19424bc57b37648591ef64a17eedde84c17b3"
+  },
+  {
+    "file": "bestOS字标_整屏_2160x3840_黑底.png",
+    "bytes": 112771,
+    "sha256": "47aebe635c704064ee65dc074544adf89e2f5b5ec4a984df85e985d18eeecce3"
+  },
+  {
+    "file": "bestOS字标_无四色条_透明底_1920.png",
+    "bytes": 105408,
+    "sha256": "b71151a83f85655152ed67781d3f5787f74819513b0d322a6f06b61eaf17f93c"
+  },
+  {
+    "file": "bestOS字标_无四色条_透明底_3840.png",
+    "bytes": 117342,
+    "sha256": "10a08ac59a0822072e63606407da9c5d70679768e3dc06784494ded3f1947489"
+  },
+  {
+    "file": "bestOS字标_纯白_透明底_1920.png",
+    "bytes": 43698,
+    "sha256": "4642a37c97c628e39f3e7227b97f9f1b34021404433ce343888f266a21e0d640"
+  },
+  {
+    "file": "bestOS字标_纯黑_透明底_1920.png",
+    "bytes": 30513,
+    "sha256": "d43b9a92a1b5779fa7cbb06934e1d7529c28f9ec1fa1a09adc109abca4860e11"
+  },
+  {
+    "file": "bestOS字标_透明底_1080.png",
+    "bytes": 54961,
+    "sha256": "a09ac47f6396c7bf79dce290376f16d5fdd2191f619320b2cd899f59e9b5a066"
+  },
+  {
+    "file": "bestOS字标_透明底_1920.png",
+    "bytes": 107318,
+    "sha256": "575dcfa767b1a16a4c6f12424036a64f0f1d7ead4409e679fbf1382aa56286a9"
+  },
+  {
+    "file": "bestOS字标_透明底_2560.png",
+    "bytes": 146387,
+    "sha256": "6739bb088a790f2b4b2c4d529b9ef95b5d3a34abf21a1b9a71416fd3ffda9d5c"
+  },
+  {
+    "file": "bestOS字标_透明底_3840.png",
+    "bytes": 119665,
+    "sha256": "d9802f479c754e71d547960a6401fba25de5c0ff3aa46c579fcd6c1e72046609"
+  },
+  {
+    "file": "生成字标.py",
+    "bytes": 4674,
+    "sha256": "750ffd272d39d32d05b93f51c32a0f8aad8e69007d779361938bab0d3107bcae"
+  },
+  {
+    "file": "预览_棋盘格校验.png",
+    "bytes": 115244,
+    "sha256": "b7367223b01c89e87b4a84dc908749e1738846d2d6d9d1803726c08b30ff5380"
+  }
+]

@@ -1,6 +1,16 @@
-# Magisk Alpha root 集成
+# Root 集成：KernelSU 条件优先
 
-## 用户需求与证据边界
+## 2026-10-25 更新：6.1 可用后优先 KernelSU
+
+- 用户最新选择：若 Linux 6.1 在小米 4 LTE 上适配成功，且 KernelSU 在该设备上验证可用，则以 KernelSU 替换 Magisk Alpha。此条件覆盖此前“必须由 Alpha 修补 boot”的要求。
+- KernelSU 与 Magisk 是不同的 root 实现；“KSU 面具”按 KernelSU 及其管理应用理解，不默认同时安装两个 root 框架。
+- 小米 4 的目标是 ARM 32 位、非 GKI 设备移植。仅内核版本为 6.1 不代表符合官方 GKI 镜像要求；不得直接刷入通用 android14-6.1 等 boot 镜像。
+- 尚未确定可用的 KernelSU 版本或分支。需核实内核端、管理应用、ksud 的 ARM32 和 Android 10 支持，以及所需 hooks、SELinux 和模块挂载支持。
+- 若条件满足，构建适配 cancro 的 KernelSU 内核，打包同次 bestOS 构建的 ramdisk 与设备树，生成 MiFlash 使用的 boot.img，并预装匹配管理应用。刷入后应可按应用授权 root；不能只预装管理 APK。
+- 必须验证首次启动、恢复出厂后的初始化、重启后的 su 授权与拒绝、模块安装和卸载。现有玩机/游戏模块需逐个检查，不能假设 Magisk 模块完全兼容 KernelSU。
+- 当前未满足切换条件；以下 Alpha 方案仅作为历史候选保留，不表示已决定回退或已实现。若 KSU 不适用，记录阻碍后再确定方案。
+
+## 原 Alpha 候选需求与证据边界
 
 - 小米 4 LTE，刷入 bestOS 后即具备 Magisk root 能力。
 - 优先使用 Magisk Alpha 版本代码 30700，预装匹配管理应用。
@@ -8,7 +18,7 @@
 - 用户反馈当前内核只支持 Alpha，此项作为适配线索，尚未经验证；当前 MIUI 内核兼容性不能直接推定新 bestOS 内核兼容性。
 - Alpha 发布频道可查到 `e8a58776-alpha 30700`；尚未取得、校验对应 APK。
 
-## 构建和交付流程
+## 原 Alpha 候选构建和交付流程
 
 1. 先构建并验证 Android 10 / cancro 未修补 boot 镜像，确认 ramdisk、启动布局、内核、分区容量。
 2. 获取可信来源的准确 Alpha APK，记录完整版本、签名和 SHA-256；不混用其他分支的同版本代码。
@@ -20,7 +30,7 @@
 
 ## 权限与现有要求
 
-- 系统具备 root 不等于所有应用自动获准 root；使用 Magisk 逐应用授权，不默认向 MT 或其他应用授予 root。
+- 系统具备 root 不等于所有应用自动获准 root；使用选定的 root 管理器逐应用授权，不默认向 MT 或其他应用授予 root。
 - 保持 SELinux enforcing 为目标，不为集成 root 默认关闭系统权限检查。
 - MT 管理器不可卸载的约束针对普通权限操作；用户主动授予 root 后可以更改系统，此时无法承诺绝对不可删除。
 - Google Play 和依赖完整性检查的应用需实测，不承诺 root 环境通过认证，不加入绕过认证的默认配置。
@@ -34,3 +44,6 @@
 - Alpha 发布频道：https://t.me/s/magiskalpha
 - Magisk 安装说明：https://github.com/topjohnwu/Magisk/blob/master/docs/install.md
 - 启动布局说明：https://topjohnwu.github.io/Magisk/boot
+
+- KernelSU 官方安装说明：https://kernelsu.org/guide/installation.html
+- KernelSU 官方源码与支持范围：https://github.com/tiann/KernelSU

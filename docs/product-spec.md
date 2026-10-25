@@ -17,7 +17,8 @@
 - 地区仅中国大陆、香港、美国，与语言独立选择；禁止普通第三方应用修改系统地区等区域配置，详见 `regions.md`。用户授权 root 后的修改不在普通权限保护范围内。
 - 用户可在设置中修改本机名称，设备型号保留真实身份且不允许普通应用修改；明确获得 root 授权的应用属于例外，详见 `device-identity.md`。
 - 系统体积尽量控制在 3 GB 内。
-- 内置 Magisk Alpha root，优先版本代码 30700；MiFlash 包内 boot.img 必须是本次 bestOS 构建对应、经过修补和实机验证的镜像，详见 `root-integration.md`。
+- 用户指定 Linux 6.1 系列内核，需专项移植小米 4 LTE；尚无可运行的构建结果，详见 `kernel-6.1-port.md`。
+- 内置 root：若 Linux 6.1 和 KernelSU 在小米 4 LTE 上均适配成功，则使用 KernelSU 替换 Magisk Alpha；此时交付集成 KSU 的同构建 boot，不再要求 Alpha 修补。ARM32 / 非 GKI 兼容性尚待验证，Alpha 30700 仅保留为原候选，详见 `root-integration.md`。
 
 ## 当前解释及默认选择
 
