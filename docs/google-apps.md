@@ -1,5 +1,7 @@
 # Google 服务与应用集成需求
 
+文档核对日期：2026-10-25。项目总体状态见 [README](../README.md)。
+
 ## 用户要求
 
 保留 bestOS 独立设计和基础应用，额外加入 Google 全家桶（明确包含 Play 商店）。不以 Google 电话、短信、图库等替换 bestOS 基础软件。

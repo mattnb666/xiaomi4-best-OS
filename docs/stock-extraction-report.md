@@ -1,10 +1,12 @@
 # 原厂线刷包提取报告
 
+文档核对日期：2026-10-25。项目总体状态见 [README](../README.md)。
+
 已从 V10.1.1.0.MXDCNFI 中国稳定版 Fastboot 包提取。未执行任何刷机脚本或镜像中的程序。
 
 ## 文件位置
 
-所有二进制产物在本地 `downloads/stock-rom/` 下，该目录被 Git 忽略，不自动上传仓库。
+所有二进制产物在本地 `downloads/stock-rom/` 下，该目录被 Git 忽略。用户已要求上传镜像、驱动和 APK；已另行打包至 `out/github-assets/`，当前尚未上传成功，见 `binary-assets.md`。
 
 - `extracted/`：原厂包完整解出内容，包含 boot/system/recovery、基带固件、分区表和刷机脚本。
 - `analysis/system.raw.img`：展开的 EXT 文件系统镜像，1,342,177,280 字节。

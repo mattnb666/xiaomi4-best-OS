@@ -1,5 +1,7 @@
 # Root 集成：KernelSU 条件优先
 
+文档核对日期：2026-10-25。项目总体状态见 [README](../README.md)。
+
 ## 2026-10-25 更新：6.1 可用后优先 KernelSU
 
 - 用户最新选择：若 Linux 6.1 在小米 4 LTE 上适配成功，且 KernelSU 在该设备上验证可用，则以 KernelSU 替换 Magisk Alpha。此条件覆盖此前“必须由 Alpha 修补 boot”的要求。

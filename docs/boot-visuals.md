@@ -1,5 +1,7 @@
 # 开机第一屏和第二屏素材
 
+文档核对日期：2026-10-25。项目总体状态见 [README](../README.md)。
+
 用户于 2026-10-25 提供 bestOS字标-素材包.zip，并要求统一上传 GitHub。原始内容保存在 assets/branding/，manifest.json 记录各文件大小及 SHA-256。
 
 ## 本次检查
@@ -17,3 +19,7 @@
 - 第二屏 1080×1920 图片作为现有设计素材保留；取得完整动画后再生成 Android bootanimation.zip、接入产品构建并实机检查方向、帧率、循环和退出行为。
 
 当前完成素材归档与清单核验，尚未完成设备集成或 MiFlash 可刷机产物。缺失项：第一屏素材，以及完整动画包或帧序列/播放参数。
+
+## GitHub 状态（2026-10-25）
+
+13 个原始文件及 manifest.json 已上传。原始 ZIP 以 `assets/branding/bestOS-wordmark-original.zip` 保存并上传，897,791 字节，内容与用户桌面文件逐字节一致。素材提交 804e1e4，原 ZIP 提交 a0ccf18。第一屏及完整动画的缺失情况未改变。

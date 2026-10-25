@@ -1,5 +1,7 @@
 # MT 管理器共存版
 
+文档核对日期：2026-10-25。项目总体状态见 [README](../README.md)。
+
 ## 已确认要求
 
 使用用户提供的 `mt (1).apk`，作为唯一预装文件管理器。保留用户自行更新能力，禁止普通用户卸载或停用。其他基础应用继续保留。
@@ -28,3 +30,7 @@ APK 原样复制到 `vendor/bestos/prebuilt/MTManager/MTManager.apk`，Android.m
 5. 用 apksigner 验证输入与构建输出，比较签名并实测首次启动、文件访问、更新、回退、卸载/停用拦截和恢复出厂。
 
 “不可删除”的目标限于正常系统权限边界，不承诺抵抗 root 修改或重新刷写系统。当前只有预装构建配置，卸载保护尚未实现，未生成可刷机产物。
+
+## 分发进度（2026-10-25）
+
+用户已要求上传 APK；本地已准备 `out/github-assets/MTManager-clone-2.26.8.apk`，与预装输入保持一致。Release 附件尚未上传成功，不能把仓库已有 Android.mk 视为 APK 已上传。见 `binary-assets.md`。
