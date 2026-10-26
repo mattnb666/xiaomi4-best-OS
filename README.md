@@ -50,7 +50,7 @@ Root 逐应用授权；玩机工具的定向预授权须核验具体 APK 和用�
 | MT APK | 本地保留 2.26.8-clone，32,070,086 字节；已静态检查，未实机运行或完整签名验证 |
 | 字标素材 | 11 张 PNG、原说明和生成脚本及校验清单已上传；原 ZIP 897,791 字节也已上传 |
 | 大附件 | 原厂镜像、系统文件/驱动、boot 组件和 APK 共约 2.02 GB 已打包校验；Release 上传仍未完成 |
-| AOSP | 已取得官方/镜像地址，r47 为候选标签；本地 manifest 下载残缺，完整源码未同步 |
+| AOSP | 已取得官方/镜像地址，r47 为候选标签；已取得完整 manifest（741 个 project），完整源码未同步 |
 | 内核与 Root | Linux 6.1 / KSU 为移植与兼容性目标，尚无编译、boot 镜像或 root 实机验证 |
 | 系统界面与功能 | 桌面、设置、锁屏、引导、Google、模块安装、卸载保护等主要为规格，尚未实现 |
 | 最终交付 | 无 bestOS MiFlash 包，无 Android 10 整机启动或功能验证 |
@@ -84,3 +84,7 @@ $(call inherit-product, vendor/bestos/config/common.mk)
 MT 模块需要 `vendor/bestos/prebuilt/MTManager/MTManager.apk`；本地已有该文件，但仓库尚无 APK 附件。Google、Root 组件及各模块仍需匹配版本并验证。
 
 编译通过不等于能启动；内核启动不等于 Android 启动；进入桌面不等于整机可用。最终须验证显示/触摸、音频/相机、电话/短信/LTE、Wi-Fi/蓝牙、充电/休眠、首次引导、root 授权及恢复路径，之后才制作并验证 MiFlash 包。保留真实设备身份和安全补丁信息，不把原厂镜像标成 bestOS。
+
+## AOSP 准备进度（2026-10-25）
+
+已取得 Android 10 r47 完整 manifest，并准备 Linux 同步脚本。当前 Mac 约 58 GiB 可用；用户确认 Windows 电脑尚未安装 WSL2 / Ubuntu，完整同步尚未开始。步骤和证据见 [AOSP 源码基底](docs/aosp-base.md)。

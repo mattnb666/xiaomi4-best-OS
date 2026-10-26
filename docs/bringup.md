@@ -28,7 +28,7 @@
 - PATH 中找到 git，未找到 repo 或 docker。
 - 原厂镜像、系统文件及专有库候选已提取；尚无验证可用的 Android 10 vendor 配置、设备树或完整内核源码。
 - AOSP 官方 manifest 地址为 https://android.googlesource.com/platform/manifest ，GitHub 参考镜像为 https://github.com/aosp-mirror/platform_manifest 。
-- 已查到 android-10.0.0_r47 标签，尚未最终锁定；本地 default.xml.partial 是不完整下载，不能作为可用 manifest，尚未同步完整源码。
+- 已查到 android-10.0.0_r47 标签，尚未最终锁定；已取得完整 default.xml 并解析 741 个项目，旧 default.xml.partial 仅保留失败记录；尚未同步完整源码。
 - Linux 6.1 移植和条件优先 KSU 方案见 `kernel-6.1-port.md`、`root-integration.md`。
 - 完整源码构建应另行准备容量充足的 Linux x86_64 环境，具体工具链由选定源码版本决定。
 
@@ -66,3 +66,7 @@
 - 记录清除用户数据的具体步骤，并在执行刷机前确认备份及恢复方式。
 - 最终包应包含验证后的镜像、适用于目标 MiFlash 版本的脚本、SHA-256 清单、安装说明及已知问题。
 - 未核对上述条件之前，不生成可执行刷写脚本，避免把示例脚本误当作已验证安装工具。
+
+## AOSP 准备进度（2026-10-25）
+
+已取得 Android 10 r47 完整 manifest，并准备 Linux 同步脚本。当前 Mac 约 58 GiB 可用；用户确认 Windows 电脑尚未安装 WSL2 / Ubuntu，完整同步尚未开始。步骤和证据见 [AOSP 源码基底](aosp-base.md)。

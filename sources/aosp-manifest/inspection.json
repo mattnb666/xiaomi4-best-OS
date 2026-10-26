@@ -1,0 +1,20 @@
+{
+  "tag": "android-10.0.0_r47",
+  "source": "https://github.com/aosp-mirror/platform_manifest",
+  "upstream": "https://android.googlesource.com/platform/manifest",
+  "manifest_sha256": "bda3eb138db31e7a64b16be6b97ffbb142b72b312e1a9111bbfdb9d5eb8f06f4",
+  "projects": 741,
+  "default": {
+    "revision": "refs/tags/android-10.0.0_r47",
+    "remote": "aosp",
+    "sync-j": "4"
+  },
+  "remotes": [
+    {
+      "name": "aosp",
+      "fetch": "..",
+      "review": "https://android-review.googlesource.com/"
+    }
+  ],
+  "status": "manifest downloaded and XML parsed; source projects not synced"
+}
