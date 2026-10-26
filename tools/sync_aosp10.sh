@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Run inside Ubuntu/WSL2, using its Linux filesystem, not /mnt/c.
 set -euo pipefail
+bestos_tools_dir=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)
 if [[ $(uname -s) != Linux || $(uname -m) != x86_64 ]]; then
   echo '需要 Linux x86_64（可使用 Ubuntu / WSL2）。' >&2; exit 1
 fi
@@ -17,6 +18,7 @@ free=shutil.disk_usage('.').free
 if free < 200 * 1024**3:
     sys.exit('当前可用空间 %.1f GiB；本项目首次同步预留至少 200 GiB，编译前仍须重新检查。' % (free/1024**3))
 PY
+python3 "$bestos_tools_dir/preflight.py" --source-parent "$PWD" --network
 if [[ -e .repo/manifest.xml ]]; then
   echo '已有 repo 工作区；为避免改变现有分支，请在该目录手动检查后继续同步。' >&2; exit 1
 fi

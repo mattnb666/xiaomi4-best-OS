@@ -1,6 +1,6 @@
 # xiaomi 4 bestOS 0.1-dev
 
-为小米 4 LTE 定制的独立系统，以 AOSP Android 10（API 29）为基础。更新日期：**2026-10-25**。
+为小米 4 LTE 定制的独立系统，以 AOSP Android 10（API 29）为基础。更新日期：**2026-10-26**。
 
 **当前完成：需求记录、初始产品配置、原厂刷机包下载与提取、字标素材上传、镜像和 APK 本地打包。尚未完成 Android / Linux 6.1 编译或实机验证，没有可刷入的 bestOS。**
 
@@ -88,3 +88,7 @@ MT 模块需要 `vendor/bestos/prebuilt/MTManager/MTManager.apk`；本地已有�
 ## AOSP 准备进度（2026-10-25）
 
 已取得 Android 10 r47 完整 manifest，并准备 Linux 同步脚本。当前 Mac 约 58 GiB 可用；用户确认 Windows 电脑尚未安装 WSL2 / Ubuntu，完整同步尚未开始。步骤和证据见 [AOSP 源码基底](docs/aosp-base.md)。
+
+## Windows 接手入口
+
+环境脚本、磁盘/内存安排、源码同步和后续助手交接，统一见 [Windows 接手与环境准备](docs/windows-handoff.md)。尚未在目标 Windows 主机执行安装或验证编译。
