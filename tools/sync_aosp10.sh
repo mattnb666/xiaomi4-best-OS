@@ -19,10 +19,33 @@ if free < 200 * 1024**3:
     sys.exit('当前可用空间 %.1f GiB；本项目首次同步预留至少 200 GiB，编译前仍须重新检查。' % (free/1024**3))
 PY
 python3 "$bestos_tools_dir/preflight.py" --source-parent "$PWD" --network
-if [[ -e .repo/manifest.xml ]]; then
-  echo '已有 repo 工作区；为避免改变现有分支，请在该目录手动检查后继续同步。' >&2; exit 1
+if [[ -d .repo ]]; then
+  if [[ ! -f .repo/bestos-source.json ]]; then
+    echo 'Existing unmanaged/incomplete repo workspace; inspect manually, do not overwrite.' >&2; exit 1
+  fi
+  python3 - <<'CHECK'
+import json, subprocess, xml.etree.ElementTree as ET
+from pathlib import Path
+expected={'url':'https://android.googlesource.com/platform/manifest','tag':'android-10.0.0_r47'}
+if json.loads(Path('.repo/bestos-source.json').read_text()) != expected:
+    raise SystemExit('Workspace marker mismatch')
+url=subprocess.check_output(['git','-C','.repo/manifests','remote','get-url','origin'],text=True).strip()
+root=ET.parse('.repo/manifest.xml').getroot()
+default=root.find('default')
+if url != expected['url'] or default is None or default.get('revision') != 'refs/tags/'+expected['tag']:
+    raise SystemExit('Manifest source/revision mismatch; inspect before syncing')
+if Path('.repo/local_manifests').exists():
+    raise SystemExit('Local manifests present; review before automatic sync')
+CHECK
+else
+  if [[ -n $(ls -A) ]]; then echo 'Choose an empty source directory.' >&2; exit 1; fi
+  repo init -u https://android.googlesource.com/platform/manifest -b android-10.0.0_r47 --depth=1
+  python3 - <<'MARK'
+import json
+from pathlib import Path
+Path('.repo/bestos-source.json').write_text(json.dumps({'url':'https://android.googlesource.com/platform/manifest','tag':'android-10.0.0_r47'})+'\n')
+MARK
 fi
-repo init -u https://android.googlesource.com/platform/manifest -b android-10.0.0_r47 --depth=1
 repo sync -c -j2 --no-clone-bundle --no-tags --fail-fast
 repo manifest -r -o bestos-aosp10-pinned.xml
 printf '%s\n' '源码同步结束并导出固定 revision 清单；尚未加入 cancro 设备构建目标，未编译 ROM。'

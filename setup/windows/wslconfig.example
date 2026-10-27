@@ -1,3 +1,4 @@
+# NOT FOR the latest reported 4 GB machine. Historical 8 GB example only.
 # Optional starting point for an 8 GB host; merge with existing settings.
 # Save as %UserProfile%\.wslconfig only after inspecting existing configuration.
 [wsl2]
